@@ -1,3 +1,5 @@
+//[BoardList.jsx]
+
 //게시글 목록 페이지
 import { Link } from "react-router-dom"
 import {posts} from './data'

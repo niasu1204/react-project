@@ -1,0 +1,28 @@
+.timer-container{
+    max-width:400px;
+}
+
+.timer-display{
+    font-size:60px;
+    font-weight:bold;
+    margin:30px 0;
+    color:purple;
+}
+
+.timer-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.timer-buttons button{
+    padding:10px 16px;
+    border:none;
+    background:purple;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.timer-buttons button:hover{
+    background:#6a0dad;
+}

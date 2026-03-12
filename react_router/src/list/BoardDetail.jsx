@@ -1,3 +1,5 @@
+// [BoardDetail.jsx]
+
 import {posts} from './data'
 import { useParams } from "react-router-dom";
 

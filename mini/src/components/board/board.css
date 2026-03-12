@@ -1,0 +1,99 @@
+.board-container{
+    max-width:600px;
+}
+
+.board-list{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.board-list li{
+    margin-bottom:10px;
+}
+
+.board-list a{
+    text-decoration:none;
+    color:purple;
+    font-weight:500;
+}
+
+.board-list a:hover{
+    text-decoration:underline;
+}
+
+button{
+    margin-top:20px;
+    padding:8px 14px;
+    border:none;
+    background:purple;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6a0dad;
+}
+
+/* 글쓰기 컨테이너 */
+
+.write-container{
+    max-width:400px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* 제목 */
+
+.write-title{
+    color:purple;
+    margin-bottom:10px;
+}
+
+/* 입력창 */
+
+.write-input{
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.write-input:focus{
+    outline:none;
+    border-color:purple;
+}
+
+/* 내용 */
+
+.write-textarea{
+    min-height:200px;
+    padding:12px;
+    font-size:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    resize:vertical;
+}
+
+.write-textarea:focus{
+    outline:none;
+    border-color:purple;
+}
+
+/* 버튼 */
+
+.write-btn{
+    width:120px;
+    padding:10px;
+    border:none;
+    background:purple;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.write-btn:hover{
+    background:#6a0dad;
+}

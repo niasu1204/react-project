@@ -1,0 +1,62 @@
+.dashboard-container{
+    display:flex;
+    height:100vh;
+    background:white;
+}
+
+/* 사이드바 */
+
+.sidebar{
+    width:220px;
+    background:purple;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.logo{
+    margin-bottom:30px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+/* 로그아웃 */
+
+.logout-area{
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+}
+
+.logout-area button{
+    margin-top:5px;
+    padding:8px;
+    border:none;
+    background:white;
+    color:purple;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* 메인 영역 */
+
+.main-content{
+    flex:1;
+    padding:40px;
+    background:white;
+}
