@@ -7,7 +7,7 @@ const STORAGE_KEY = "todo_data";
 const reducer = (state, action) => {
   switch (action.type) {
     case "INIT":
-      return action.data;
+      return action.data;//todos에 저장-> 값 변경 -> 랜더링
     case "CREATE":
       return [...state, action.data];
     case "TOGGLE":
@@ -23,9 +23,9 @@ const reducer = (state, action) => {
 
 function App() {
   const [todos, dispatch] = useReducer(reducer, []);
-
+//제일 처음 한번
   useEffect(() => {
-    const rawData = localStorage.getItem(STORAGE_KEY);
+    const rawData = localStorage.getItem(STORAGE_KEY); // 
     if (rawData) {
       dispatch({ type: "INIT", data: JSON.parse(rawData) });
     }
