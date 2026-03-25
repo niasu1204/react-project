@@ -19,9 +19,14 @@ export const getNote = async (id) => {
   return res.data;
 };
 
-// 생성
-export const createNote = async (data) => {
-  const res = await api.post("/notes", data);
+// 생성 (파일 업로드를 위해 수정)
+export const createNote = async (formData) => {
+  // 세 번째 인자로 해당 요청에만 적용할 헤더를 설정합니다.
+  const res = await api.post("/notes", formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
   return res.data;
 };
 
